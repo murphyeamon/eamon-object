@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html">
+  <title>Eamon Murphy</title>
+  <meta name="author" content="Eamon Murphy">
+  <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+</head>
+
+<body>
+  <div id="topbar">
+
+  <h2 id="gifs"> Hover to animate </h2>
+
+
+  </div>
+  
+  <div id="w">
+    <div id="content">
+   
+    
+        
+        
+          <ul id="giflist" class="clearfix">
+
+          
+
+          <li>
+
+          <h2>Rig to use jig saw upside down</h2>
+
+          <a href="images/Jig-Saw-60-%.gif" target="_blank"><img src="images/Jig-Saw-60-%.jpg" data-orig="images/Jig-Saw-60-%.jpg" width="958" height="369"></a>
+
+          </li>
+
+          <li>
+
+          <h2>1/3 scale saw horse on rotary table</h2>
+
+          <a href="images/Saw Horse Color.gif" target="_blank"><img src="images/Saw Horse Color.jpg" data-orig="images/Saw Horse Color.jpg" width="675" height="507"></a>
+
+          </li>
+
+          <li>
+
+          <h2>Sheetmetal frame for folding camp stove</h2>
+
+          <a href="images/Stove-Color.gif" target="_blank"><img src="images/Stove-Color.jpg" data-orig="images/Stove-Color.jpg" width="540" height="304"></a>
+
+          </li>
+
+          
+          <li>
+
+          <h2>2nd floor lobby, Foundation Building</h2>
+
+          <a href="images/Lobby.gif" target="_blank"><img src="images/Lobby.jpg" data-orig="images/Lobby.jpg" width="386" height="625"></a>
+
+          </li>
+          
+          
+     
+          
+          
+          
+          
+          
+
+        </ul>
+      </form>
+    </div><!-- @end #content -->
+  </div><!-- @end #w -->
+<script type="text/javascript">
+$(function(){
+  $('#giflist li a img').hover(function(){
+    // on mouse enter
+    var customdata = $(this).parent().attr('href');
+    $(this).attr('src',customdata); 
+  }, function(){
+    // on mouse leave
+    $(this).attr('src',$(this).attr('data-orig'));
+  });
+
+});
+</script>
+</body>
+</html>

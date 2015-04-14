@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html">
+  <title>Eamon Murphy</title>
+  <meta name="author" content="Eamon Murphy">
+  <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+</head>
+
+<body>
+  <div id="topbar">
+
+  <a id="gifs" href="gifs.html">Click to view my animated gifs!</a>
+
+  </div>
+  
+  <div id="w">
+    <div id="content">
+
+    
+        
+        
+          <ul id="giflist" class="clearfix">
+
+         
+          <li>
+
+          <h2>Chicken Coop</h2>
+
+          <a href="images/chicken coop.svg" target="_blank"><img src="images/chicken coop.svg" data-orig="images/chicken coop.svg" width="500" height="526"></a>
+
+          
+
+          </li>
+
+              
+          <li>
+
+           <h2>Child Cart</h2>
+
+          <a href="images/child cart.svg" target="_blank"><img src="images/child cart.svg" data-orig="images/child cart.svg" width="600" height="800"></a>
+
+         
+
+          </li>
+
+          
+          
+          
+          
+          <li>
+
+          <h2>Lathe based on plans by Dave Gingery</h2>
+
+          <a href="images/gingery lathe.svg" target="_blank"><img src="images/gingery lathe.svg" data-orig="images/gingery lathe.svg" width="800" height="479"></a>
+
+
+          </li>
+          
+          
+          <li>
+
+          <h2>Sketch for Roto Casting Jig</h2>
+
+
+          <img src="images/egg.svg" alt="Roto Casting Jig" height="533" width="620">
+
+          </li>
+
+          
+        
+          
+          
+     
+          
+          
+          
+          
+          
+
+        </ul>
+      </form>
+    </div><!-- @end #content -->
+  </div><!-- @end #w -->
+<script type="text/javascript">
+$(function(){
+  $('#giflist li a img').hover(function(){
+    // on mouse enter
+    var customdata = $(this).parent().attr('href');
+    $(this).attr('src',customdata); 
+  }, function(){
+    // on mouse leave
+    $(this).attr('src',$(this).attr('data-orig'));
+  });
+
+});
+</script>
+</body>
+</html>
